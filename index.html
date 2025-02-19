@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phani's Portfolio</title>
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Phani's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Deploying of my portfolio website
+
+                </p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Will be uploaded soon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me!</p>
+            <button onclick="toggleContactDetails()">Show Contact Details</button>
+            <div id="contact-details">
+                <p><strong>Email:</strong> phaneendrarajubhatt@gmail.com</p>
+                <p><strong>Phone:</strong> +91 8639723389</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/phaneendrarajubhatt">LinkedIn</a>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Phani-commits">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Phanifolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // --- JavaScript ---
+        function toggleContactDetails() {
+            var contactDetails = document.getElementById('contact-details');
+            if (contactDetails.style.display === 'none') {
+                contactDetails.style.display = 'block';
+            } else {
+                contactDetails.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
